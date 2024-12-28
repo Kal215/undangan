@@ -1,0 +1,668 @@
+:root {
+    --pink: #f14e95;
+    --bg: #000;
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+    --text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    --primary-color: #6d5840;
+    --background-gray: #f0f0f0;
+    --white: #fff;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 4000px;
+}
+
+#hero {
+    min-height: 100vh;
+    background-color: var(--bg);
+    background-image: url('img/undangan2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mynavbar {
+    background-color:rgba(255, 255, 255, 0.3)!important;
+    backdrop-filter: blur(5px);
+}
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+
+.mynavbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    
+}
+
+
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--pink);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+h4, p {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-item {
+    background: linear-gradient(135deg, #f14e95, #ff80b5);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: var(--pink);
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--pink);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.home .container {
+    max-width: 800px; /* Batasi lebar maksimal */
+}
+
+
+.home, .info, .story{
+    text-align: center;
+    background-image: url(img/undangan1.jpg);
+    background-size: cover;
+    min-height: 150vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    font-weight: bold;
+}
+
+.home h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#home .container {
+    background: rgba(255, 255, 255, 0.9); /* Kotak putih dengan transparansi */
+    padding: 30px;
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lembut multi-layer */
+    border-radius: 50px;
+}
+
+.home h1
+{
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: var(--pink);
+    margin-bottom: -3rem
+}
+
+.home h3{
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.home p {
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem; /* Kurangi margin bawah */
+    line-height: 1.6; /* Atur jarak antar baris */
+}
+
+.home .couple{
+    margin-top: 50px;
+}
+
+.home .couple h3{
+    font-family: 'sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.home .couple img {
+    width: 100%;
+    }
+.story {
+    text-align: center;
+    background-color: var(--bg);
+    background-size: cover;
+    min-height: 120vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+
+ .gifts h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5rem;
+    color: var(--pink);
+    margin-bottom: 1.5rem;
+}
+
+.story h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+    color: var(--pink);
+    margin-bottom: -2rem;
+    position: relative; /* Mengaktifkan positioning relatif */
+    left: -20px; /* Geser sedikit ke kiri */
+}
+
+.story h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: var(--pink);
+    margin-bottom: 1.5rem;
+    position: relative; /* Mengaktifkan positioning relatif */
+    left: 20px; /* Geser sedikit ke kanan */
+}
+
+.info h2 {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 3.5rem; /* Ukuran font sesuai kebutuhan */
+    color: var(--pink) !important;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Tambahkan efek shadow jika perlu */
+}
+    
+.info p, .story p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+/* Section dengan background abu-abu */
+.event-container {
+    background-image: url(img/undangan1.jpg); /* Background abu-abu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    min-height: 100vh; /* Background penuh */
+  }
+  
+  /* Card dengan sudut melengkung */
+  .card {
+    background: #fff; /* Warna putih */
+    width: 320px; /* Lebar card */
+    padding: 20px 30px;
+    border-radius: 50px; /* Sudut melengkung */
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    position: relative;
+  }
+  
+  .event-title {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 3.5rem !important; /* Ukuran font */
+    color: var(--pink) !important; /* Gunakan warna sesuai variabel CSS */
+    text-align: center !important; /* Center teks */
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+.event-titlee {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 1.3rem !important; /* Ukuran font */
+    color: var(--bg) !important; /* Gunakan warna sesuai variabel CSS */
+    text-align: center !important; /* Center teks */
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+
+  /* Heading */
+  .card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #030302;
+  }
+  
+  /* Bulan */
+  .card .month {
+    font-size: 1.2rem;
+    color: #030302;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Tanggal */
+  .card .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Jarak antar elemen tanggal */
+    margin: 20px 0;
+    color: #030302;
+    font-weight: bold;
+  }
+  
+  .card .day,
+  .card .year {
+    font-size: 1rem;
+    color: #030302;
+  }
+  
+  .card .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #030302;
+  }
+  
+  /* Waktu dan lokasi */
+  .card .time,
+  .card .location {
+    font-size: 1.5rem;
+    color: #030302;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Tombol Map */
+  .card .map-button {
+    background: #8b7b6f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .card .map-button:hover {
+    background: #6e6457;
+  }
+  /* Event Section */
+  .event-container {
+    display: flex;
+    flex-direction: column; /* Atur secara vertikal */
+    align-items: center; /* Pusatkan elemen */
+    gap: 30px; /* Jarak antar kartu */
+    padding: 50px 0; /* Jarak atas dan bawah */
+    background-color: #f5f5f5; /* Warna latar belakang */
+    min-height: 100vh; /* Agar memenuhi layar */
+}
+
+
+.card {
+    .card {
+        background: #fff; /* Warna putih */
+        width: 320px; /* Lebar card */
+        padding: 30px 20px; /* Padding di dalam card */
+        text-align: center; /* Pusatkan teks */
+        position: relative; /* Untuk memastikan bayangan mengikuti bentuk */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+        clip-path: url(#card-shape); /* Terapkan bentuk dari SVG */
+        -webkit-clip-path: url(#card-shape); /* Dukungan untuk browser Webkit */
+    }
+    
+}
+
+.card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.card .month {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card .time, .card .location {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.card .map-button {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card .map-button:hover {
+    background: #564432;
+}
+
+.date {
+    display: flex; /* Tata letak horizontal */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    gap: 10px; /* Jarak antar elemen */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #030302;
+}
+
+.separator {
+    width: 2px; /* Lebar garis */
+    height: 40px; /* Tinggi garis vertikal (panjangnya) */
+    background-color: #030302; /* Warna garis */
+}
+
+.story-container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8); /* Hitam dengan transparansi */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+  
+  .story-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, #fef6e4, #f6d1e8);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .story h2 {
+    color: var(--pink);
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: var(--text-shadow);
+  }
+  .story h3 {
+    color: var(--bg);
+    font-family: 'serif';
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: var(--text-shadow);
+  }
+  
+  .story p {
+    color: #444;
+    margin-bottom: 1.2rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .gifts-section {
+    padding: 40px 20px;
+    background-image: url(img/undangan1.jpg);
+    text-align: center;
+}
+
+/* Judul section */
+.gifts-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    color: #eb08b9;
+    margin-bottom: 10px;
+}
+
+/* Deskripsi section */
+.gifts-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Container untuk gift cards */
+.gifts-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Kartu hadiah individual */
+.gift-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gift-card:hover {
+    transform: scale(1.05);
+}
+
+/* Gambar hadiah */
+.gift-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Judul hadiah */
+.gift-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Info hadiah */
+.gift-info {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Tombol hadiah */
+.gift-button {
+    display: inline-block;
+    background-color: #eb08b9;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.gift-button:hover {
+    background-color: #c10798;
+}
+
+.event-tiple {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 3.5rem !important; /* Ukuran font */
+    color: var(--pink) !important; /* Gunakan warna sesuai variabel CSS */
+    text-align: center !important; /* Center teks */
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+
+.event-tiplee {
+    font-family: 'serif' !important;
+    font-size: 1.5rem !important; /* Ukuran font */
+    color: var(--bg) !important; /* Gunakan warna sesuai variabel CSS */
+    text-align: center !important; /* Center teks */
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+  
+
+/* media */
+/* laptop */
+@media (min-width: 992px) {
+ html {
+      font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 70%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    html {
+         font-size: 65%;
+       }
+    .simply-countdown > .simply-section {
+           padding: 60px;
+           margin: 5px;
+       }
+    .mynavbar .navbar-nav .nav-link {
+        font-size : 2rem;
+        text-align: center;
+       
+       }
+   }
+/* Mobile */
+@media (max-width: 767px) {
+    html {
+        font-size: 55%; /* Kurangi ukuran font untuk perangkat kecil */
+    }
+
+    body {
+        font-size: 1rem; /* Atur ulang ukuran font dasar */
+        padding: 10px; /* Beri jarak padding */
+    }
+
+    #hero {
+        background-size: cover;
+        background-position: top center; /* Fokus pada bagian atas gambar */
+        padding: 20px; /* Beri jarak pada konten */
+    }
+
+    .mynavbar .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Ukuran teks lebih kecil */
+        padding: 5px 10px; /* Kurangi padding */
+    }
+
+    h1 {
+        font-size: 3rem; /* Kurangi ukuran heading utama */
+        margin-bottom: 0.5rem; /* Jarak lebih kecil */
+    }
+
+    h4, p {
+        font-size: 1rem; /* Sesuaikan ukuran teks */
+    }
+
+    .home, .info, .story {
+        padding: 10rem 2rem 3rem; /* Sesuaikan padding atas dan bawah */
+        margin-top: -3rem; /* Perbaiki overlap margin */
+    }
+
+    .home h2 {
+        font-size: 4rem; /* Kurangi ukuran heading */
+    }
+
+    .home h3, .home p {
+        font-size: 1rem; /* Sesuaikan untuk ukuran layar kecil */
+    }
+
+    .home .couple h3 {
+        font-size: 2rem; /* Kurangi ukuran teks pasangan */
+    }
+
+    .card {
+        width: 100%; /* Lebar kartu menyesuaikan layar */
+        padding: 20px 10px; /* Kurangi padding */
+        border-radius: 15px; /* Sudut kartu tetap */
+    }
+
+    .card h2 {
+        font-size: 1.2rem; /* Sesuaikan ukuran teks */
+    }
+
+    .card .month, .card .time, .card .location {
+        font-size: 1rem; /* Ukuran lebih kecil */
+    }
+
+    .card .map-button {
+        font-size: 0.9rem; /* Ukuran tombol lebih kecil */
+        padding: 8px 15px; /* Kurangi padding */
+    }
+
+    .story-container, .story-card {
+        padding: 20px; /* Padding lebih kecil */
+    }
+
+    .gifts-container {
+        flex-direction: column; /* Susun gift cards vertikal */
+        gap: 15px; /* Kurangi jarak antar elemen */
+    }
+
+    .gift-card {
+        width: 100%; /* Sesuaikan lebar */
+        padding: 15px; /* Kurangi padding */
+    }
+}
+
+   
